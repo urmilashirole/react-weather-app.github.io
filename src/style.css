@@ -28,7 +28,7 @@ body{
     margin-top: 10px;
 }
 .SearchEngine input{
-    width: 70%;
+    width: 20%;
     height: 40px;
     border:none;
     border-radius:50px;
@@ -37,26 +37,16 @@ body{
     outline: none;
     background-color:#fff;
     color:#555;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.SearchEngine input:focus{
+    width:50%;
 }
 .SearchEngine input::placeholder{
     color:#555;
     font-weight: 500;
     font-style: italic;
-}
-.SearchEngine button{
-    width:78px;
-    height:44px;
-    border:none;
-    border-radius: 50px;
-    background-color: #7973ce;
-    color: #fff;
-    font-size:20px;
-    border: none;
-    cursor: pointer;
-}
-.SearchEngine button:hover{
-    color:#609edb;
-    background-color: white;
 }
 .error-message{
     display: block;
